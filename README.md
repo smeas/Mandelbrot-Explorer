@@ -2,7 +2,7 @@
 
 A simple [Mandelbrot](https://en.wikipedia.org/wiki/Mandelbrot_set) fractal explorer written in processing.
 
-## Controls
+### Controls
 
 |                        |             |
 | ---------------------- | ----------- |

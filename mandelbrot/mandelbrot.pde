@@ -5,6 +5,7 @@
  * w, a, s, d  - Pan
  * up, down    - Zoom
  * left, right - Iteration count
+ * p           - Save image
  */
 
 final int FRAME_TIME_BUDGET = 16*2; // max time in milliseconds to spend calculating per frame
@@ -80,6 +81,11 @@ void keyPressed() {
     tx = ty = 0;
     sx = sy = 1;
   } else {
+    if (key == 'p') {
+      println("Saving image...");
+      saveFrame("mandelbrot-####.png");
+    }
+
     invalidate = false;
   }
 
